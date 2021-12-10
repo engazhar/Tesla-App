@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Cartitem from './components/cart-items';
+import Cartitem from './components/car-items';
 
 export default function App() {
   return (
