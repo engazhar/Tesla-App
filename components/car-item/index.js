@@ -1,8 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import styles from './style';
+import StyledButton from '../style-button';
 
-const Cartitem = (props) => {
+const Caritem = (props) => {
   return (
     <View style={styles.body}>
       <ImageBackground 
@@ -14,7 +15,25 @@ const Cartitem = (props) => {
           <Text style={styles.title}>Model S</Text>
           <Text style={styles.subtitle}>Starting at $69,420</Text>
       </View>
+
+      <View>
+      <StyledButton 
+        type="primary"
+        content={"custom order"}
+        onPress= {() => {
+          console.warn("custom order buttom");
+        }}
+        />
+
+        <StyledButton 
+        type="secondary"
+        content={"existing inventory"}
+        onPress= {() => {
+          console.warn("custom order buttom");
+        }}
+        />
+      </View>
     </View>
   );
 }
-export default Cartitem;
+export default Caritem;
